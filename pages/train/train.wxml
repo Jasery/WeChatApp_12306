@@ -1,0 +1,42 @@
+<!--pages/train/train.wxml-->
+
+<view class="page-top"></view>
+<view class="container">
+    <view class="query-head">
+        <view class="tab tag">火车票</view>
+        <view class="tab">飞机票</view>
+    </view>
+    <view class="query-box">
+        <view class="query-row">
+            <view style="height:100px; width:30%;background-color:red;"> hello </view>
+            <view style="height:100px; width:30%;background-color:yellow;"> hello </view>
+            <view style="height:100px; width:30%;background-color:blue;"> hello </view>
+        </view>
+        <view class="query-row">
+            <view style="height:100px;width:50%;background-color:black;"></view>
+            <view style="height:100px;width:50%;background-color:green;"></view>
+        </view>
+        <view class="query-row">
+            <view style="height:100px;width:50%;background-color:green;"></view>
+            <view style="height:100px;width:50%;background-color:black;"></view>
+        </view>
+        <view class="query-row">
+            <button type="primary" style="width:100%;background-color:blue;">查询</button>
+        </view>
+    </view>
+    <view class="query-box">
+        <view class="query-row">
+            <view style="height:100px;width:24%;background-color:grey"></view>
+            <view style="height:100px;width:24%;background-color:purple"></view>
+            <view style="height:100px;width:24%;background-color:pink"></view>
+            <view style="height:100px;width:24%;background-color:#d8d8d8"></view>
+        </view>
+    </view>
+</view>
+
+
+
+
+
+
+

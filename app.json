@@ -1,0 +1,45 @@
+{
+  "pages":[
+    "pages/train/train",
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle":"black",
+    "backgroundColor": "#F4F4F4",
+    "enablePullDownRefresh": false
+  },
+  "tabBar": {
+    "color":"#5D5D5D",
+    "selectedColor": "#5495E6",
+    "backgroundColor": "#ffffff",
+    "borderStyle": "white",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "火车票",
+      "iconPath": "./images/tabbar/train.png",
+      "selectedIconPath": "./images/tabbar/train-selected.png"
+    },
+    {
+      "pagePath": "pages/logs/logs",
+      "text": "飞机票",
+      "iconPath": "./images/tabbar/plane.png",
+      "selectedIconPath": "./images/tabbar/plane-selected.png"
+    },
+    {
+      "pagePath": "pages/index/index",
+      "text": "汽车票",
+      "iconPath": "./images/tabbar/coach.png",
+      "selectedIconPath": "./images/tabbar/coach-selected.png"
+    },
+    {
+      "pagePath": "pages/index/index",
+      "text": "个人中心",
+      "iconPath": "./images/tabbar/personnel.png",
+      "selectedIconPath": "./images/tabbar/personnel-selected.png"
+    }]
+  }
+}

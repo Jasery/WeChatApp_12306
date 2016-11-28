@@ -1,0 +1,52 @@
+/**app.wxss**/
+.container {
+  margin: 0 20rpx;
+  box-sizing: border-box;
+  border-radius: 15rpx;
+} 
+
+.page-top {
+  width: 100%;
+  background-color: #FF5110;
+  height: 300rpx;
+}
+
+.query-box {
+  flex-direction: column;
+  padding: 0 40rpx;
+  background-color: #fff;
+}
+
+.query-row {
+  /*padding: 50rpx 0;*/
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.query-head{
+  height: 100rpx;
+  padding: 0 40rpx;
+  background-color: #898989;
+  opacity: 0.9;
+  margin-top: -20rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  border-radius: 10rpx 10rpx 0 0;
+}
+
+.tab{
+    width:50%;
+    text-align: center;
+    line-height: 100rpx;
+    font-size: 40rpx;
+    color:white;
+}
+
+.tag{
+  background: url("../../images/train-tab.png");
+  margin-top: -10rpx;
+  padding-top: 10rpx;
+  color:black;
+}
