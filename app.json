@@ -9,8 +9,8 @@
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "WeChat",
     "navigationBarTextStyle":"black",
-    "backgroundColor": "#F4F4F4",
-    "enablePullDownRefresh": false
+    "backgroundColor": "red;",
+    "enablePullDownRefresh": "false"
   },
   "tabBar": {
     "color":"#5D5D5D",
@@ -18,7 +18,7 @@
     "backgroundColor": "#ffffff",
     "borderStyle": "white",
     "list": [{
-      "pagePath": "pages/index/index",
+      "pagePath": "pages/train/train",
       "text": "火车票",
       "iconPath": "./images/tabbar/train.png",
       "selectedIconPath": "./images/tabbar/train-selected.png"

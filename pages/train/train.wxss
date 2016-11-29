@@ -1,1 +1,15 @@
 /* pages/train/train.wxss */
+
+.tomorrow {
+    color: #5194E6;
+    font-weight: 600;
+}
+.train-checked {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.train-checked text {
+    margin: 0 10px;
+    font-weight: 600;
+}

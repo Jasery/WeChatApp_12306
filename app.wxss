@@ -1,14 +1,21 @@
 /**app.wxss**/
 .container {
+  width: 100%;
   margin: 0 20rpx;
   box-sizing: border-box;
   border-radius: 15rpx;
 } 
+.bg{
+  width: 100%;
+  height: 100%;
+  background-color: #F4F4F4;
+  display: flex;
+}
 
 .page-top {
   width: 100%;
   background-color: #FF5110;
-  height: 300rpx;
+  height: 100rpx;
 }
 
 .query-box {
@@ -18,12 +25,22 @@
 }
 
 .query-row {
-  /*padding: 50rpx 0;*/
+  padding: 15px 0;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
 }
 
+.query-history {
+  width: 100%;
+  display: flex;
+}
+.query-history text {
+  margin: 10px 10px 10px 0;
+  font-size: 15px;
+  color: #999999;
+}
 .query-head{
   height: 100rpx;
   padding: 0 40rpx;
@@ -50,3 +67,61 @@
   padding-top: 10rpx;
   color:black;
 }
+
+.switch image{
+  width: 50px;
+  height: 50px;
+}
+.query-city {
+  border-bottom: 1rpx solid #E5E5E5;
+}
+
+.begin-city,.end-city{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.begin-city {
+  justify-content: flex-start;
+}
+.end-city {
+  justify-content: flex-end;
+}
+.city{
+  font-size: 25px;
+  font-weight: 800;
+}
+.query-date{
+  padding:20px 0;
+  border-bottom: 1rpx solid #E5E5E5;
+}
+.date {
+  font-size: 23px;
+  font-weight: 700;
+}
+.btn-query {
+  padding: 0;
+}
+.btn-query button {
+  width:100%;
+}
+.extension {
+  margin: 10px 0;
+}
+.extension image {
+  height:50px; 
+  width: 50px;
+}
+.extension-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.extension-item text {
+  font-size: 12px;
+  margin: 10px 0;
+}
+
+
+
+

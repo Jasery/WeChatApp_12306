@@ -1,37 +1,73 @@
 <!--pages/train/train.wxml-->
 
 <view class="page-top"></view>
+<view class="bg">
 <view class="container">
-    <view class="query-head">
-        <view class="tab tag">火车票</view>
-        <view class="tab">飞机票</view>
-    </view>
-    <view class="query-box">
-        <view class="query-row">
-            <view style="height:100px; width:30%;background-color:red;"> hello </view>
-            <view style="height:100px; width:30%;background-color:yellow;"> hello </view>
-            <view style="height:100px; width:30%;background-color:blue;"> hello </view>
+    <view class="query-head" >
+        <view class="tab tag">
+            <text>火车票</text>
         </view>
-        <view class="query-row">
-            <view style="height:100px;width:50%;background-color:black;"></view>
-            <view style="height:100px;width:50%;background-color:green;"></view>
-        </view>
-        <view class="query-row">
-            <view style="height:100px;width:50%;background-color:green;"></view>
-            <view style="height:100px;width:50%;background-color:black;"></view>
-        </view>
-        <view class="query-row">
-            <button type="primary" style="width:100%;background-color:blue;">查询</button>
+        <view class="tab">
+            <text>飞机票</text>
         </view>
     </view>
     <view class="query-box">
+        <view class="query-row query-city">
+            <view class="begin-city"> 
+                <text class="city">茂名</text>
+            </view>
+            <view class="switch">
+                <image class="switch-img" src="../../images/switch.png"></image>
+            </view>
+            <view class="end-city">
+                <text class="city">广州</text>
+            </view>
+        </view>
+        <view class="query-row query-date">
+            <view>
+                <text class="date">11月28日</text>
+            </view>
+            <view>
+                <text class="tomorrow">明天</text>
+            </view>
+        </view>
         <view class="query-row">
-            <view style="height:100px;width:24%;background-color:grey"></view>
-            <view style="height:100px;width:24%;background-color:purple"></view>
-            <view style="height:100px;width:24%;background-color:pink"></view>
-            <view style="height:100px;width:24%;background-color:#d8d8d8"></view>
+            <view class="train-checked">
+                <text>高铁动车</text><switch type="switch" />
+            </view>
+            <view class="train-checked">
+                <text>学生票</text><switch type="switch" />
+            </view>
+        </view>
+        <view class="query-row btn-query">
+            <button type="primary" style="background-color:#5495E6">查询</button>
+        </view>
+        <view class="query-history">
+            <text>佛山 -> 茂名</text>
+            <text>茂名 -> 佛山</text>
         </view>
     </view>
+    <view class="query-box extension">
+        <view class="query-row">
+            <view class="extension-item">
+                <image src="../../images/extension1.png"></image>
+                <text>极速抢票</text>
+            </view>
+            <view class="extension-item">
+                <image src="../../images/extension2.png"></image>
+                <text>在线选座</text>
+            </view>
+            <view class="extension-item">
+                <image src="../../images/extension3.png"></image>
+                <text>一元夺宝</text>
+            </view>
+            <view class="extension-item">
+                <image src="../../images/extension4.png"></image>
+                <text>超值酒店</text>
+            </view>
+        </view>
+    </view>
+</view>
 </view>
 
 
