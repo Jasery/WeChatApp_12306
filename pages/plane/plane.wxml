@@ -1,0 +1,50 @@
+<!--pages/plane/plane.wxml-->
+
+<view class="page-top"></view>
+<view class="bg">
+    <view class="container">
+        <view class="query-head" >
+            <view class="tab tag">
+                <text>单程</text>
+            </view>
+            <view class="tab">
+                <text>往返</text>
+            </view>
+        </view>
+        <view class="query-box">
+            <view class="query-row query-city">
+                <view class="begin-city">
+                    <text class="city-descript">出发城市</text> 
+                    <text class="city">上海</text>
+                </view>
+                <view class="switch">
+                    <image class="switch-img" src="../../images/switch.png"></image>
+                </view>
+                <view class="end-city">
+                    <text class="city-descript">到达城市</text>
+                    <text class="city">北京</text>
+                </view>
+            </view>
+            <view class="query-row query-date">
+                <view>
+                    <text class="city-descript">出发日期</text>
+                    <text class="date">11月28日</text>
+                </view>
+                <view>
+                    <text class="day">明天</text>
+                </view>
+            </view>
+            <view class="query-row btn-query">
+                <button type="primary" style="background-color:#5495E6">查询</button>
+            </view>
+        </view>
+
+    </view>
+</view>
+
+
+
+
+
+
+

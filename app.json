@@ -1,5 +1,8 @@
 {
   "pages":[
+    "pages/personnel/personnel",
+    "pages/coach/coach",
+    "pages/plane/plane",
     "pages/train/train",
     "pages/index/index",
     "pages/logs/logs"
@@ -24,19 +27,19 @@
       "selectedIconPath": "./images/tabbar/train-selected.png"
     },
     {
-      "pagePath": "pages/logs/logs",
+      "pagePath": "pages/plane/plane",
       "text": "飞机票",
       "iconPath": "./images/tabbar/plane.png",
       "selectedIconPath": "./images/tabbar/plane-selected.png"
     },
     {
-      "pagePath": "pages/index/index",
+      "pagePath": "pages/coach/coach",
       "text": "汽车票",
       "iconPath": "./images/tabbar/coach.png",
       "selectedIconPath": "./images/tabbar/coach-selected.png"
     },
     {
-      "pagePath": "pages/index/index",
+      "pagePath": "pages/personnel/personnel",
       "text": "个人中心",
       "iconPath": "./images/tabbar/personnel.png",
       "selectedIconPath": "./images/tabbar/personnel-selected.png"

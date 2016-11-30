@@ -1,0 +1,15 @@
+/* pages/coach/coach.wxss */
+.query-box {
+    margin-top: -40rpx;
+    border-radius: 10rpx 10rpx 0 0 ;
+}
+.city-descript {
+    margin-top: 0;
+}
+
+.btn-query {
+    padding-top: 50rpx;
+}
+.extension {
+    margin-top: 30rpx;    
+}

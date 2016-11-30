@@ -1,0 +1,8 @@
+/* pages/personnel/personnel.wxss */
+.query-box {
+    margin-top: -40rpx;
+    border-radius: 10rpx 10rpx 0 0 ;
+}
+.extension-item text {
+    color: black;
+}

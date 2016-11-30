@@ -28,7 +28,7 @@
                 <text class="date">11月28日</text>
             </view>
             <view>
-                <text class="tomorrow">明天</text>
+                <text class="day">明天</text>
             </view>
         </view>
         <view class="query-row">
@@ -50,19 +50,19 @@
     <view class="query-box extension">
         <view class="query-row">
             <view class="extension-item">
-                <image src="../../images/extension1.png"></image>
+                <image src="../../images/train-extension1.png"></image>
                 <text>极速抢票</text>
             </view>
             <view class="extension-item">
-                <image src="../../images/extension2.png"></image>
+                <image src="../../images/train-extension2.png"></image>
                 <text>在线选座</text>
             </view>
             <view class="extension-item">
-                <image src="../../images/extension3.png"></image>
+                <image src="../../images/train-extension3.png"></image>
                 <text>一元夺宝</text>
             </view>
             <view class="extension-item">
-                <image src="../../images/extension4.png"></image>
+                <image src="../../images/train-extension4.png"></image>
                 <text>超值酒店</text>
             </view>
         </view>

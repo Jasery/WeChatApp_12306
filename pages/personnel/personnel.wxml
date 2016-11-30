@@ -1,0 +1,35 @@
+<!--pages/personnel/personnel.wxml-->
+<view class="page-top"></view>
+<view class="bg">
+    <view class="container">
+        <view class="query-box">
+            <view class="query-row extension">
+                <view class="extension-item">
+                    <image src="../../images/personnel-extension1.png"></image>
+                    <text>火车票订单</text>
+                </view>
+                <view class="extension-item">
+                    <image src="../../images/personnel-extension2.png"></image>
+                    <text>机票订单</text>
+                </view>
+                <view class="extension-item">
+                    <image src="../../images/personnel-extension3.png"></image>
+                    <text>汽车票订单</text>
+                </view>
+                <view class="extension-item">
+                    <image src="../../images/personnel-extension4.png"></image>
+                    <text>其他订单</text>
+                </view>
+            </view>            
+        </view>          
+    </view>
+    <view style="height:100px;background-color:green;margin-bottom:200rpx;">hellowrld</view>
+</view>
+
+
+
+
+
+
+
+
