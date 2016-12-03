@@ -9,3 +9,7 @@
     margin: 0 20rpx;
     font-weight: 600;
 }
+
+.bg{
+    padding-bottom: 5rpx;
+}

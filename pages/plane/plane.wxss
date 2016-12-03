@@ -2,9 +2,11 @@
 .query-box {
     padding-bottom: 50rpx;
 }
-.container {
-    margin-bottom:390rpx;
-}
 .query-date {
     border: none;
 }
+
+.bg{
+    padding-bottom: 399rpx;
+}
+

@@ -3,6 +3,48 @@
     margin-top: -40rpx;
     border-radius: 10rpx 10rpx 0 0 ;
 }
+.extension {
+    margin-bottom: 0;
+}
 .extension-item text {
     color: black;
 }
+.personnel-item {
+    display: flex;
+    flex-direction: row;
+    background-color: #fff;
+}
+.personnel-item image {
+    margin:25rpx;
+    height:50rpx;
+    width:55rpx;
+}
+.personnel-descript {
+    height:100rpx;
+    width:100%;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    align-items:center;
+    border-bottom:2rpx solid #F4F4F4;
+}
+.personnel-descript text {
+    font-weight: 600;
+}
+.personnel-descript text.action {
+    font-size: 33rpx;
+    color: #5194E6;
+    margin: 30rpx;
+}
+.personnel-descript text.action::after {
+    content: " >";
+    color: #CACACA;
+    padding-left: 20rpx;
+}
+
+.bg {
+    padding-bottom: 107rpx;
+}
+
+
+

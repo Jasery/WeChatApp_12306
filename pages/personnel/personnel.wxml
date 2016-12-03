@@ -23,7 +23,49 @@
             </view>            
         </view>          
     </view>
-    <view style="height:100px;background-color:green;margin-bottom:200rpx;">hellowrld</view>
+    <!--wtf,单边阴影可以用背景图片搞定，为何还要在这纠结-->
+    <view class="personnel-item" style="box-shadow:0rpx 0rpx 30rpx -0rpx #ccc;margin-bottom:20rpx;">
+        <image src="../../images/icon/treasure.png"></image>
+        <view class="personnel-descript" style="border:none;">
+            <text style="font-weight:800">我的财富</text>
+            <text class="action">领取加速包</text>
+        </view>
+    </view>
+    <view class="personnel-item">
+        <image src="../../images/icon/trip.png"></image>
+        <view class="personnel-descript">
+            <text>出行服务</text>
+            <text class="action">正晚点/时刻表</text>
+        </view>
+    </view>
+    <view class="personnel-item">
+        <image src="../../images/icon/invite.png"></image>
+        <view class="personnel-descript">
+            <text>邀请好友</text>
+            <text class="action">一起来抢票</text>
+        </view>
+    </view>
+    <view class="personnel-item">
+        <image src="../../images/icon/message.png"></image>
+        <view class="personnel-descript">
+            <text>消息中心</text>
+            <text class="action"></text>
+        </view>
+    </view>
+    <view class="personnel-item">
+        <image src="../../images/icon/advise.png"></image>
+        <view class="personnel-descript">
+            <text>产品意见</text>
+            <text class="action"></text>
+        </view>
+    </view>
+    <view class="personnel-item">
+        <image src="../../images/icon/more.png"></image>
+        <view class="personnel-descript" style="border:none">
+            <text>更多</text>
+            <text class="action"></text>
+        </view>
+    </view>
 </view>
 
 

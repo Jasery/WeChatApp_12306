@@ -13,3 +13,7 @@
 .extension {
     margin-top: 30rpx;    
 }
+
+.bg{
+    padding-bottom: 127rpx;
+}
