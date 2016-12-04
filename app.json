@@ -1,18 +1,14 @@
 {
   "pages":[
+    "pages/train/train",
     "pages/personnel/personnel",
     "pages/coach/coach",
-    "pages/plane/plane",
-    "pages/train/train",
-    "pages/index/index",
-    "pages/logs/logs"
+    "pages/plane/plane"
   ],
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
     "navigationBarTextStyle":"black",
-    "backgroundColor": "red;",
     "enablePullDownRefresh": false
   },
   "tabBar": {
