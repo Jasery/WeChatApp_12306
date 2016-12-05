@@ -46,5 +46,9 @@
     padding-bottom: 107rpx;
 }
 
+.shadow {
+    background: url("../../images/shadow.png") no-repeat;
+    background-size: contain;
+}
 
 

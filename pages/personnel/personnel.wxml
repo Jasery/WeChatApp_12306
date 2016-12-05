@@ -23,8 +23,7 @@
             </view>            
         </view>          
     </view>
-    <!--wtf,单边阴影可以用背景图片搞定，为何还要在这纠结-->
-    <view class="personnel-item" style="box-shadow:0rpx 0rpx 30rpx -0rpx #ccc;margin-bottom:20rpx;">
+    <view class="personnel-item" style="box-shadow:0rpx -20rpx 50rpx 0rpx #eee;margin-bottom:20rpx;">
         <image src="../../images/icon/treasure.png"></image>
         <view class="personnel-descript" style="border:none;">
             <text style="font-weight:800">我的财富</text>

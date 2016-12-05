@@ -37,8 +37,9 @@
                 <button type="primary" style="background-color:#5495E6">查询</button>
             </view>
             <view class="query-history">
-                <text>佛山 -> 茂名</text>
-                <text>茂名 -> 佛山</text>
+                <scroll-view scroll-x="true">
+                    <text wx:for="{{coachHistories}}">{{item.begin}} -> {{item.end}}</text>                
+                </scroll-view>
             </view>
         </view>
         <view class="query-box extension">

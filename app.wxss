@@ -36,23 +36,29 @@
   width: 100%;
   display: flex;
 }
+.query-history scroll-view {
+  height: 70rpx;
+  white-space:nowrap;
+}
+
 .query-history text {
   margin: 20rpx 20rpx 20rpx 0;
+  display: inline-block;
   font-size: 30rpx;
   color: #999999;
 }
 .query-head{
   height: 100rpx;
   padding: 0 40rpx;
-  background-color: #898989;
-  opacity: 0.9;
+  /*background-color: #898989;
+  opacity: 0.9;*/
+  background: url("../../images/tab-bg.png");
   margin-top: -35rpx;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   border-radius: 20rpx 20rpx 0 0;
 }
-/*这里的透明度处理还是有点问题，下次可以尝试用透明的背景图片而不是直接元素透明*/
 .tab{
     width:50%;
     text-align: center;
@@ -62,7 +68,8 @@
 }
 
 .tag{
-  background: url("../../images/train-tab.png");
+  background: url("../../images/tab.png");
+  background-size: cover;
   margin-top: -10rpx;
   padding-top: 10rpx;
   color:black;
