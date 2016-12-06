@@ -1,0 +1,14 @@
+<!--pages/date/date.wxml-->
+
+<view class="week-row">
+    <view><text>日</text></view>
+    <view><text>一</text></view>
+    <view><text>二</text></view>
+    <view><text>三</text></view>
+    <view><text>四</text></view>
+    <view><text>五</text></view>
+    <view><text>六</text></view>
+</view>
+
+
+

@@ -1,5 +1,6 @@
 {
   "pages":[
+    "pages/date/date",
     "pages/train/train",
     "pages/personnel/personnel",
     "pages/coach/coach",

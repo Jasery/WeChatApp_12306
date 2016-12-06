@@ -1,0 +1,15 @@
+/* pages/date/date.wxss */
+
+.week-row {
+    height:60rpx;
+    background-color:#F4F4F4;
+    padding:0 25rpx;
+    display: flex;
+    align-items: center;
+}
+.week-row view {
+    display:inline-block;
+    box-sizing:border-box;
+    width:100rpx;
+    text-align:center;
+}

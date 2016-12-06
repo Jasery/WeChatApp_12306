@@ -1,6 +1,8 @@
 <!--pages/plane/plane.wxml-->
 
-<view class="page-top"></view>
+<view class="page-top">
+    <image src="../../images/top/plane.jpg"></image>
+</view>
 <view class="bg">
     <view class="container">
         <view class="query-head" >

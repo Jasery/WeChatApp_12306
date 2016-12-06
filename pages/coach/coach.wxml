@@ -1,15 +1,9 @@
 <!--pages/coach/coach.wxml-->
-<view class="page-top"></view>
+<view class="page-top">
+    <image src="../../images/top/coach.jpg"></image>
+</view>
 <view class="bg">
     <view class="container">
-        <!--<view class="query-head" >
-            <view class="tab tag">
-                <text>单程</text>
-            </view>
-            <view class="tab">
-                <text>往返</text>
-            </view>
-        </view>-->
         <view class="query-box">
             <view class="query-row query-city">
                 <view class="begin-city">
@@ -45,19 +39,19 @@
         <view class="query-box extension">
         <view class="query-row">
             <view class="extension-item">
-                <image src="../../images/coach-extension1.png"></image>
+                <image src="../../images/extension/coach-extension1.png"></image>
                 <text>火车票</text>
             </view>
             <view class="extension-item">
-                <image src="../../images/coach-extension2.png"></image>
+                <image src="../../images/extension/coach-extension2.png"></image>
                 <text>机场巴士</text>
             </view>
             <view class="extension-item">
-                <image src="../../images/coach-extension3.png"></image>
+                <image src="../../images/extension/coach-extension3.png"></image>
                 <text>景区直达</text>
             </view>
             <view class="extension-item">
-                <image src="../../images/coach-extension4.png"></image>
+                <image src="../../images/extension/coach-extension4.png"></image>
                 <text>船票</text>
             </view>
         </view>

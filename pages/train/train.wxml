@@ -1,8 +1,23 @@
 <!--pages/train/train.wxml-->
 
-<view class="page-top"></view>
+<view class="page-top">
+    <swiper indicator-dots="true" style="width:100%;height:100%;">
+        <swiper-item>
+            <image src="../../images/top/train.jpg"></image>
+        </swiper-item>
+        <swiper-item>
+            <image src="../../images/top/totoro.jpg"></image>
+        </swiper-item>
+        <swiper-item>
+            <image src="../../images/top/totoro2.jpg"></image>
+        </swiper-item>
+        <swiper-item>
+            <image src="../../images/top/totoro3.jpg"></image>
+        </swiper-item>
+    </swiper>
+</view>
 <view class="bg">
-<view class="container">
+<view class="container" style="z-index:1000;">
     <view class="query-head" >
         <view class="tab tag">
             <text>火车票</text>
@@ -51,19 +66,19 @@
     <view class="query-box extension">
         <view class="query-row">
             <view class="extension-item">
-                <image src="../../images/train-extension1.png"></image>
+                <image src="../../images/extension/train-extension1.png"></image>
                 <text>极速抢票</text>
             </view>
             <view class="extension-item">
-                <image src="../../images/train-extension2.png"></image>
+                <image src="../../images/extension/train-extension2.png"></image>
                 <text>在线选座</text>
             </view>
             <view class="extension-item">
-                <image src="../../images/train-extension3.png"></image>
+                <image src="../../images/extension/train-extension3.png"></image>
                 <text>一元夺宝</text>
             </view>
             <view class="extension-item">
-                <image src="../../images/train-extension4.png"></image>
+                <image src="../../images/extension/train-extension4.png"></image>
                 <text>超值酒店</text>
             </view>
         </view>
