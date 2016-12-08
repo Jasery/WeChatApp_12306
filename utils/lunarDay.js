@@ -105,5 +105,5 @@ function showLunarDay(date) {
 }
 
 module.exports = {
-    lunarDay: showLunarDay
+    getLunarDay: showLunarDay
 }

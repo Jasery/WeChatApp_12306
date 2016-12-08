@@ -13,3 +13,32 @@
     width:100rpx;
     text-align:center;
 }
+
+.month {
+    padding:0 25rpx;
+}
+.month-day {
+    box-sizing: border-box;
+    width: 100rpx;
+    text-align: center;
+    margin: 15rpx 0;
+    display: inline-block;
+}
+.common-day {
+    font-size: 40rpx;
+}
+.lunar-day {
+    font-size: 20rpx;
+}
+.this-month {
+    border-top:2rpx solid #E4E4E4;
+    margin:30rpx 0 0 0;
+}
+.this-month view {
+    margin-top:-20rpx;
+    text-align:center;
+}
+.this-month text {
+    background-color:white;
+    padding:0 20rpx;
+}

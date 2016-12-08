@@ -9,6 +9,26 @@
     <view><text>五</text></view>
     <view><text>六</text></view>
 </view>
+<!--<view class="month">
+    <view class="this-month">
+        <view><text>2016年12月</text></view>
+    </view>
+    <view class="month-day" wx:for="{{month}}">
+        <view class="common-day">{{item.day}}</view>
+        <view class="lunar-day">{{item.lunar}}</view>
+    </view>
+</view>-->
 
+<view class="month" wx:for="{{months}}" wx:for-index="monthIndex" wx:for-item="monthItem">
+    <view class="this-month">
+        <view><text>{{monthItem.monthDescript}}</text></view>
+    </view>
+    <view class="month-day" wx:for="{{monthItem.days}}" wx:for-index="dayIndex" wx:for-item="dayItem">
+        <view bindtap="dateClick" data-date="{{dayItem.date}}" >
+            <view class="common-day" wx:if="{{dayItem.date != null}}">{{dayItem.dateNum}}</view>
+            <view class="lunar-day" wx:if="{{dayItem.date != null}}">{{dayItem.lunarDay}}</view>
+        </view>
+    </view>
+</view>
 
 
