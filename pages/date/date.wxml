@@ -1,7 +1,9 @@
 <!--pages/date/date.wxml-->
 
 <view class="week-row">
+    <navigator url="../train/train">
     <view><text>日</text></view>
+    </navigator>
     <view><text>一</text></view>
     <view><text>二</text></view>
     <view><text>三</text></view>
@@ -23,12 +25,16 @@
     <view class="this-month">
         <view><text>{{monthItem.monthDescript}}</text></view>
     </view>
-    <view class="month-day" wx:for="{{monthItem.days}}" wx:for-index="dayIndex" wx:for-item="dayItem">
-        <view bindtap="dateClick" data-date="{{dayItem.date}}" >
-            <view class="common-day" wx:if="{{dayItem.date != null}}">{{dayItem.dateNum}}</view>
-            <view class="lunar-day" wx:if="{{dayItem.date != null}}">{{dayItem.lunarDay}}</view>
-        </view>
+    <view class="month-day"  wx:for="{{monthItem.days}}" wx:for-index="dayIndex" wx:for-item="dayItem">
+        <navigator url="{{url}}?date=dayItem.date" redirect="true" style="height:100%;">
+            <view catchtouchstart="dateTouchStart" catchtouchend="dateTouchEnd" class="{{dayItem.styleClass}}" style="height:100%;" data-date="{{dayItem.date}}" >
+                <view class="common-day" wx:if="{{dayItem.date != null}}">{{dayItem.dateNum}}</view>
+                <view class="lunar-day" wx:if="{{dayItem.date != null}}">{{dayItem.lunarDay}}</view>
+            </view>
+        </navigator>
     </view>
 </view>
+
+<view style="height:50rpx;"></view>
 
 

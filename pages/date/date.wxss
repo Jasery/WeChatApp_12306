@@ -21,11 +21,12 @@
     box-sizing: border-box;
     width: 100rpx;
     text-align: center;
-    margin: 15rpx 0;
+    height: 100rpx;
     display: inline-block;
 }
 .common-day {
     font-size: 40rpx;
+    padding-top:10rpx;
 }
 .lunar-day {
     font-size: 20rpx;
@@ -41,4 +42,14 @@
 .this-month text {
     background-color:white;
     padding:0 20rpx;
+}
+
+.choose {
+    background-color: #5495E6;
+    border-radius: 50% 50%;
+}
+
+.navigator-hover {
+    color:blue;
+    background-color: red;
 }

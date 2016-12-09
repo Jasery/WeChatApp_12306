@@ -5,7 +5,8 @@ var lunarDayHelper = require("../../utils/lunarDay.js");
 
 Page({
   data:{
-    
+    months:"",
+    url:"../train/train"
   },
   onLoad:function(options){
     // 页面初始化 options为页面跳转所带来的参数
@@ -27,7 +28,6 @@ Page({
     nNextMonth.days = this.getNextMonth(date);
     nNextMonth.monthDescript = date.getFullYear() + "年" + (date.getMonth() + 1) + "月"
     months.push(nNextMonth)
-    console.log(nNextMonth)
     this.setData({
       months:months
     })
@@ -58,6 +58,7 @@ Page({
       //setDate方法是把date改成当天，返回的只是当天的时间戳
       var theDate = new Date(date.setDate(i));
         var monthDay = {
+          styleClass:"",
           date: theDate.toLocaleDateString(),
           lunarDay:lunarDayHelper.getLunarDay(theDate).substr(-2,2),
           dateNum: theDate.getDate()
@@ -67,7 +68,7 @@ Page({
     return month;
   },
   getMonthDayCount: function (date) {
-    var month = date.getMonth() + 1
+    var month = date.getMonth() + 1;
     switch(month) {
       case 1:
         return 31;
@@ -105,7 +106,7 @@ Page({
     var currentMonth = date.getMonth() + 1;
     if(currentMonth == 12) {
       var currentYear = date.getFullYear();
-      date.setFullYear(currentYear + 1)
+      date.setFullYear(currentYear + 1);
       date.setMonth(0)
       return this.monthFormat(date);
     } else {      
@@ -115,7 +116,42 @@ Page({
       return this.monthFormat(date)
     }
   },
-  dateClick: function (e) {
-    console.log(e.currentTarget.dataset)
-  }
+  // dateTouchStart: function (e) {
+  //   var date = e.currentTarget.dataset.date
+  //   var months = this.data.months
+  //   var isBreak = false;
+  //   for(var i in months) {
+  //     if(isBreak) {break;}
+  //     for(var j in months[i].days) {
+  //       if(date == months[i].days[j].date) {
+  //         months[i].days[j].styleClass = "choose"
+  //         //第二个坑，要setData之后才会更新到界面
+  //         this.setData({
+  //           months:months
+  //         })
+  //         isBreak = true;
+  //         break;
+  //       }
+  //     }
+  //   }    
+  // },
+  // dateTouchEnd: function (e) {
+  //   var date = e.currentTarget.dataset.date
+  //   var months = this.data.months
+  //   var isBreak = false;
+  //   for(var i in months) {
+  //     if(isBreak) {break;}
+  //     for(var j in months[i].days) {
+  //       if(date == months[i].days[j].date) {
+  //         months[i].days[j].styleClass = ""
+  //         //第二个坑，要setData之后才会更新到界面
+  //         this.setData({
+  //           months:months
+  //         })
+  //         isBreak = true;
+  //         break;
+  //       }
+  //     }
+  //   } 
+  // }
 })
