@@ -1,7 +1,7 @@
 {
   "pages":[
-    "pages/date/date",
     "pages/train/train",
+    "pages/date/date",
     "pages/personnel/personnel",
     "pages/coach/coach",
     "pages/plane/plane"

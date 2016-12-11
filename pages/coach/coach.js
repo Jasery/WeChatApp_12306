@@ -1,13 +1,28 @@
 // pages/coach/coach.js
 
 var history = require("../../utils/history.js");
+var util = require('../../utils/util.js')
 
 Page({
   data:{},
   onLoad:function(options){
     // 页面初始化 options为页面跳转所带来的参数
+    var date = new Date();
+    var today = new Date();
+    var selectDay,dayDescript;
+    if(options.date != null) {
+      date = new Date(options.date)
+    }
+    selectDay = (date.getMonth() + 1 ) + '月' + date.getDate() + '日'
+    dayDescript = util.getDayDescript(today, date);
+
     this.setData({
-      coachHistories:history.coach
+      coachHistories:history.coach,
+      selectDate:{
+        date:date,
+        selectDay:selectDay,
+        dayDescript:dayDescript
+      }
     })
   },
   onReady:function(){

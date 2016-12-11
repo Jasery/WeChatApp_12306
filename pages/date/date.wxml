@@ -15,19 +15,27 @@
     <view class="this-month">
         <view><text>2016年12月</text></view>
     </view>
-    <view class="month-day" wx:for="{{month}}">
-        <view class="common-day">{{item.day}}</view>
-        <view class="lunar-day">{{item.lunar}}</view>
+    <view class="month-day" >
+        <navigator url="../train/train" >
+            <view catchtouchstart="">
+                <view class="common-day">12</view>
+                <view class="lunar-day">十二</view>
+            </view>
+        </navigator>
     </view>
 </view>-->
 
-<view class="month" wx:for="{{months}}" wx:for-index="monthIndex" wx:for-item="monthItem">
+<view class="month" wx:for="{{months}}" wx:key="monthDescript" wx:for-index="monthIndex" wx:for-item="monthItem">
     <view class="this-month">
         <view><text>{{monthItem.monthDescript}}</text></view>
     </view>
-    <view class="month-day"  wx:for="{{monthItem.days}}" wx:for-index="dayIndex" wx:for-item="dayItem">
-        <navigator url="{{url}}?date=dayItem.date" redirect="true" style="height:100%;">
-            <view catchtouchstart="dateTouchStart" catchtouchend="dateTouchEnd" class="{{dayItem.styleClass}}" style="height:100%;" data-date="{{dayItem.date}}" >
+    <view class="month-day"  wx:for="{{monthItem.days}}" wx:key="common-day" wx:for-index="dayIndex" wx:for-item="dayItem">
+    <!--第三个坑，navigator如果设置了触摸，点击事件，hover-class不起作用-->
+    <!--第四个坑，非常坑坑，redirect为false的话，从跳转到的页面再跳转回来，跳转回来算是一个新的页面了，反复操作页面数量一直再叠加，最大不能超过5个页面-->
+    <!--不能有可以形成一个回环并且redirect为false的跳转！！！！-->
+        <view catchtab="catchClick" class="{{dayItem.styleClass}}"></view>
+        <navigator wx:if="{{dayItem.date}}" url="{{url}}?date={{dayItem.date}}" hover-class="choose" redirect="true" class="{{dayItem.styleClass}}" style="height:100%;">
+            <view style="height:100%;" data-date="{{dayItem.date}}" >
                 <view class="common-day" wx:if="{{dayItem.date != null}}">{{dayItem.dateNum}}</view>
                 <view class="lunar-day" wx:if="{{dayItem.date != null}}">{{dayItem.lunarDay}}</view>
             </view>

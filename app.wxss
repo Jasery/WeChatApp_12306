@@ -34,6 +34,7 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
 }
 
 .query-history {
@@ -54,8 +55,6 @@
 .query-head{
   height: 100rpx;
   padding: 0 40rpx;
-  /*background-color: #898989;
-  opacity: 0.9;*/
   background: url("../../images/tab-bg.png");
   margin-top: -35rpx;
   display: flex;
@@ -77,7 +76,6 @@
   margin-top: -10rpx;
   padding-top: 10rpx;
   color:black;
-  opacity: 1.0;
 }
 
 .switch image{
@@ -112,7 +110,7 @@
   font-weight: 600;
 }
 .query-date{
-  padding:40rpx 0;
+  padding:20rpx 0;
   border-bottom: 1rpx solid #E5E5E5;
 }
 .date {
@@ -136,8 +134,8 @@
   margin: 20rpx 0;
 }
 .extension image {
-  height:100rpx; 
-  width: 100rpx;
+  height: 80rpx; 
+  width: 80rpx;
 }
 .extension-item {
   display: flex;

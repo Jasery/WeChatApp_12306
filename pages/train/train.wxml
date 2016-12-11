@@ -38,13 +38,15 @@
                 <text class="city">广州</text>
             </view>
         </view>
-        <view class="query-row query-date">
+        <view class="query-date">
+            <navigator url="/pages/date/date?page=/pages/train/train&date={{selectDate.date}}" redirect="true" hover-class="none" class="query-row">
             <view>
-                <text class="date">11月28日</text>
+                <text class="date">{{selectDate.selectDay}}</text>
             </view>
             <view>
-                <text class="day">明天</text>
+                <text class="day">{{selectDate.dayDescript}}</text>
             </view>
+            </navigator>
         </view>
         <view class="query-row">
             <view class="train-checked">

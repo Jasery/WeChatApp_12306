@@ -6,13 +6,17 @@ var lunarDayHelper = require("../../utils/lunarDay.js");
 Page({
   data:{
     months:"",
-    url:"../train/train"
+    url:""
   },
   onLoad:function(options){
     // 页面初始化 options为页面跳转所带来的参数
+    var url = options.page
+    var selectDate = new Date(options.date)
+    this.setData({
+      selectDate : selectDate
+    })
 
     var date = new Date();
-
     var month = {}
     var months = []
     month.monthDescript = date.getFullYear() + "年" + (date.getMonth() + 1) + "月"
@@ -29,7 +33,8 @@ Page({
     nNextMonth.monthDescript = date.getFullYear() + "年" + (date.getMonth() + 1) + "月"
     months.push(nNextMonth)
     this.setData({
-      months:months
+      months:months,
+      url : url
     })
 
   },
@@ -53,17 +58,33 @@ Page({
       month.push({date:null});
     }
     var dayCount = this.getMonthDayCount(date);
+    var selectDate = this.data.selectDate;
+    var today = new Date()
     for(var i = 1; i <= dayCount; i++) {
       
       //setDate方法是把date改成当天，返回的只是当天的时间戳
       var theDate = new Date(date.setDate(i));
-        var monthDay = {
-          styleClass:"",
-          date: theDate.toLocaleDateString(),
-          lunarDay:lunarDayHelper.getLunarDay(theDate).substr(-2,2),
-          dateNum: theDate.getDate()
-        }
-        month.push(monthDay);
+      var styleClass = "";
+      var lunarDay = lunarDayHelper.getLunarDay(theDate).substr(-2,2),
+          dateNum = theDate.getDate();
+      if (theDate.getFullYear() == selectDate.getFullYear() && theDate.getMonth() == selectDate.getMonth() && theDate.getDate() == selectDate.getDate()) {
+        styleClass = "select-day";
+      } 
+      if (theDate.getFullYear() == today.getFullYear() && theDate.getMonth() == today.getMonth() && theDate.getDate() == today.getDate()) {
+        styleClass =  "today " + styleClass
+        //lunarDay = "  "
+        dateNum = "今天" 
+      } else if (theDate < today) {
+        styleClass = "past";
+      }
+      
+      var monthDay = {
+        styleClass:styleClass,
+        date: theDate.toLocaleDateString(),
+        lunarDay:lunarDay,
+        dateNum: dateNum
+      }
+      month.push(monthDay);
     }
     return month;
   },
@@ -154,4 +175,5 @@ Page({
   //     }
   //   } 
   // }
+  catchClick: function () {}
 })

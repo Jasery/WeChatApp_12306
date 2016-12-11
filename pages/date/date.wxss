@@ -49,7 +49,24 @@
     border-radius: 50% 50%;
 }
 
-.navigator-hover {
-    color:blue;
-    background-color: red;
+view.past {
+    position:absolute;
+    width:100rpx;
+    height:100rpx;
+}
+
+navigator.past {
+    color: #CCCCCC;
+}
+
+navigator.select-day {
+    background-color: #5495E6;
+    border-radius: 50% 50%;
+}
+
+navigator.today {
+    color: #5495E6;
+}
+navigator.today.select-day {
+    color: #fff;
 }
