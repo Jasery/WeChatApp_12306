@@ -22,13 +22,32 @@ Page({
         date:date,
         dayDescript:dayDescript,
         selectDay:selectDay
-      },
-      
+      }      
     })
 
   },
   onReady:function(){
     // 页面渲染完成
+    wx.request({
+      url: 'http://www.tngou.net/api/area/province?type=all',
+      data: {},
+      method: 'GET', // OPTIONS, GET, HEAD, POST, PUT, DELETE, TRACE, CONNECT
+      // header: {}, // 设置请求的 header
+      success: function(res){
+        // success
+        console.log(res)
+      },
+      fail: function() {
+        // fail
+      },
+      complete: function() {
+        // complete
+      }
+    })
+
+
+
+
   },
   onShow:function(){
     // 页面显示

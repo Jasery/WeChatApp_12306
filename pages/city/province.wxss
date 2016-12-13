@@ -1,0 +1,22 @@
+/* pages/city/province.wxss */
+.area {
+    margin:20rpx 0;
+    background-color: #fff;
+}
+.area-item {
+    border-bottom:1rpx solid #F4F4F4;
+    padding:20rpx 40rpx;
+    display:flex;
+}
+.area-name {
+    font-weight: 600;
+    width: 100%;
+}
+.arrows {
+    float: right;
+    display: inline-block;
+}
+.arrows::after {
+    content:">";
+    color:#ccc;
+}

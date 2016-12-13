@@ -1,0 +1,19 @@
+<!--pages/city/city.wxml-->
+<view class="bg">
+    <view class="area">
+        <view wx:for="{{cities}}">
+            <navigator url="{{page}}&city={{item.city}}" hover-class="none">
+                <view class="area-item">
+                    <view class="area-name">
+                        {{item.city}}
+                    </view>
+                </view>
+            </navigator>
+        </view>
+
+
+    </view>
+
+</view>
+
+
