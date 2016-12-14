@@ -4,7 +4,12 @@ Page({
   onLoad:function(options){
     // 页面初始化 options为页面跳转所带来的参数
     var id = options.id;
-    var page = options.page;
+    var page = options.page
+    var beginEnd = options.beginEnd
+    var beginCity = options.beginCity
+    var endCity = options.endCity
+    console.log("beginCity" + beginCity)
+    console.log("endCity" + endCity)
     var that = this;
     wx.request({
       url: 'http://www.tngou.net/api/area/city',
@@ -14,8 +19,11 @@ Page({
         var cities = {};
         cities = ret.data.tngou;
         that.setData({
+          beginCity:beginCity,
+          endCity:endCity,
           cities:cities,
-          page:page
+          page:page,
+          beginEnd:beginEnd
         })
  
       }

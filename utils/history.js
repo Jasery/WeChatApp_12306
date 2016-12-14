@@ -42,11 +42,20 @@ var coach = [
         end:"江门"
     }];
 
+var plane = [
+    {
+        begin:"广州",
+        end:"北京"
+    }
+    ];
+
+
 
 
 
 
 module.exports = {
   train: train,
-  coach:coach
+  coach: coach,
+  plane: plane
 }

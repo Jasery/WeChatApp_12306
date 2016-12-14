@@ -1,8 +1,8 @@
 {
   "pages":[
+    "pages/train/train",
     "pages/city/province",
     "pages/city/city",
-    "pages/train/train",
     "pages/date/date",
     "pages/personnel/personnel",
     "pages/coach/coach",

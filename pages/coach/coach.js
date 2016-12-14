@@ -4,9 +4,22 @@ var history = require("../../utils/history.js");
 var util = require('../../utils/util.js')
 
 Page({
-  data:{},
+  data:{
+  },
   onLoad:function(options){
     // 页面初始化 options为页面跳转所带来的参数
+    //处理出发城市即到达城市
+    var beginEnd = options.beginEnd    
+    var beginCity =  history.coach[0].begin ,
+        endCity = history.coach[0].end
+    if(beginEnd == "begin") {
+      beginCity = options.city;
+      endCity = options.endCity
+    } else if (beginEnd == 'end') {
+      endCity = options.city
+      beginCity = options.beginCity
+    }
+
     var date = new Date();
     var today = new Date();
     var selectDay,dayDescript;
@@ -18,6 +31,8 @@ Page({
 
     this.setData({
       coachHistories:history.coach,
+      beginCity:beginCity,
+      endCity:endCity,
       selectDate:{
         date:date,
         selectDay:selectDay,

@@ -2,7 +2,7 @@
 <view class="bg">
     <view class="area">
         <view wx:for="{{provinces}}">
-            <navigator url="./city?id={{item.id}}&page={{page}}" hover-class="none">
+            <navigator url="./city?id={{item.id}}&page={{page}}&beginEnd={{beginEnd}}&beginCity={{beginCity}}&endCity={{endCity}}" redirect="true" hover-class="none">
                 <view class="area-item">
                     <view class="area-name">
                         {{item.province}}

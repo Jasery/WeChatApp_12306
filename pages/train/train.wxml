@@ -29,13 +29,17 @@
     <view class="query-box">
         <view class="query-row query-city">
             <view class="begin-city"> 
-                <text class="city">茂名</text>
+                <navigator url="/pages/city/province?page=pages/train/train&beginEnd=begin&endCity={{endCity}}" redirect="true" hover-class="none">
+                    <text class="city">{{beginCity}}</text>
+                </navigator>
             </view>
             <view class="switch">
                 <image class="switch-img" src="../../images/switch.png"></image>
             </view>
             <view class="end-city">
-                <text class="city">广州</text>
+                <navigator url="/pages/city/province?page=pages/train/train&beginEnd=end&beginCity={{beginCity}}" redirect="true" hover-class="none">
+                    <text class="city">{{endCity}}</text>
+                </navigator>
             </view>
         </view>
         <view class="query-date">

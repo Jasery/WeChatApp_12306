@@ -79,8 +79,8 @@
 }
 
 .switch image{
-  width: 50px;
-  height: 50px;
+  width: 80rpx;
+  height: 80rpx;
 }
 .query-city {
   border-bottom: 1rpx solid #E5E5E5;
@@ -89,13 +89,15 @@
 .begin-city,.end-city{
   display: flex;
   flex-direction: column;
-  align-items: center;
+  /*align-items: center;*/
+  width: 100%;
 }
 .begin-city {
-  justify-content: flex-start;
+  /*justify-content: flex-start;*/
 }
 .end-city {
-  justify-content: flex-end;
+  /*justify-content: flex-end;*/
+  text-align: right;
 }
 .city{
   font-size: 50rpx;

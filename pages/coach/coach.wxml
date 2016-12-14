@@ -7,28 +7,22 @@
         <view class="query-box">
             <view class="query-row query-city">
                 <view class="begin-city">
-                    <text class="city-descript">出发城市</text> 
-                    <text class="city">上海</text>
+                    <navigator url="/pages/city/province?page=pages/coach/coach&beginEnd=begin&endCity={{endCity}}" redirect="true" hover-class="none">
+                        <text class="city-descript">出发城市</text> 
+                        <text class="city">{{beginCity}}</text>
+                    </navigator>
                 </view>
                 <view class="switch">
                     <image class="switch-img" src="../../images/switch.png"></image>
                 </view>
                 <view class="end-city">
-                    <text class="city-descript">到达城市</text>
-                    <text class="city">北京</text>
+                    <navigator url="/pages/city/province?page=pages/coach/coach&beginEnd=end&beginCity={{beginCity}}" redirect="true" hover-class="none">
+                        <text class="city-descript">到达城市</text>
+                        <text class="city">{{endCity}}</text>
+                    </navigator>
                 </view>
             </view>
-            <!--
-        <view class="query-date">
-            <navigator url="/pages/date/date?page=/pages/train/train" redirect="true" hover-class="none" class="query-row">
-            <view>
-                <text class="date">{{selectDay}}</text>
-            </view>
-            <view>
-                <text class="day">{{dayDescript}}</text>
-            </view>
-            </navigator>
-        </view>-->
+            
             <view class="query-date">
                 <navigator url="/pages/date/date?page=/pages/coach/coach&date={{selectDate.date}}" redirect="true" hover-class="none" class="query-row">
                     <view>

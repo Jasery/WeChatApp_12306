@@ -4,9 +4,24 @@ var history = require('../../utils/history.js')
 var util = require('../../utils/util.js')
 
 Page({
-  data:{},
+  data:{
+  },
   onLoad:function(options){
     // 页面初始化 options为页面跳转所带来的参数
+    //处理出发城市即到达城市
+    var beginEnd = options.beginEnd    
+    var beginCity = history.train[0].begin ,
+        endCity = history.train[0].end
+    if(beginEnd == "begin") {
+      beginCity = options.city;
+      endCity = options.endCity
+      console.log("back endCity" + endCity)
+    } else if (beginEnd == 'end') {
+      endCity = options.city
+      beginCity = options.beginCity
+    }
+
+    //处理日期显示
     var date = new Date();
     var today = new Date();
     var selectDay,dayDescript;
@@ -18,6 +33,8 @@ Page({
 
     this.setData({
       trainHistories:history.train,
+      beginCity:beginCity,
+      endCity:endCity,
       selectDate:{
         date:date,
         dayDescript:dayDescript,
@@ -28,26 +45,6 @@ Page({
   },
   onReady:function(){
     // 页面渲染完成
-    wx.request({
-      url: 'http://www.tngou.net/api/area/province?type=all',
-      data: {},
-      method: 'GET', // OPTIONS, GET, HEAD, POST, PUT, DELETE, TRACE, CONNECT
-      // header: {}, // 设置请求的 header
-      success: function(res){
-        // success
-        console.log(res)
-      },
-      fail: function() {
-        // fail
-      },
-      complete: function() {
-        // complete
-      }
-    })
-
-
-
-
   },
   onShow:function(){
     // 页面显示
